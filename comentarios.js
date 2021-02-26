@@ -99,7 +99,15 @@ console.log({
     }
 
 })
+//object
 
+//quando eu quero imprimir só um valor eu uso o .//
+connst person = {
+    name: 30,
+    weight: 88.6,
+    isAdmin: true
+}
+console.log(person.nome)
 
 /* 
 *Array (Vetores) ( È um agrupamento de dados)
@@ -117,3 +125,89 @@ console.log([
     2,
     3,
 ])
+const animals = [
+    'Lion',
+    'Monkey',
+    'Çat',
+]
+
+//como acessar valores dentro do Arrey eu uso 
+
+//com os conchetes eu consigo encontrar a posição do Array.
+console.log(animals[0])
+
+//se eu quero encontra o valor total do Array
+console.log(animals.length)
+
+
+
+
+/* Varieveis
+ variaveis são nomes simbolicos para receber algum valor.
+Variaveis ñ precisa ter um tipo previamente definido
+Podemos mudar o conteudo da variàvel
+
+ * Atalhos de codigo
+ * identificadores
+ * 3 palavras reservadas para criar uma variavel
+     * var (Var alternar entre um valor e outro )
+     ## var é global e local, pode funcionar fora de um escopo de bloco
+    console.log ('> existe x antes do bloco? ',x)
+
+    {
+        var x = 0
+    }
+
+    console.log('> existe x depois do bloco? ', x)
+
+
+    * let ( Let funciona semelhante ao Var )
+     * const (A Const ñ pode mudar o seu valor duarante a aplicação, apesar de està no grupo de variavel a const sempre serà const ela ñ muda.)
+
+// conts e let são locais e só funciona no escopo onde foi criada.
+
+
+
+#scope
+* Escopo determina a visibilidade de alguma variavel no JS
+
+#Block statement
+// aqui dentro é um bloco e posso colocar qualquer código// aqui fecha o bloco.
+
+
+
+// Variaveis e tiposde dados
+// declaração or declaration
+   * var name
+
+
+
+// assigment or atribuição de valores
+   *name= "Cartoon"
+
+
+// que tipo de dado foi colocado na variavel
+
+    *console.log (typeof name)
+
+// agrupamento de declarações
+*let age, isHuman
+
+age = 18
+isHuman = true
+
+console.log(name, age, isHuman)
+
+//escrita de texto + variáveis
+para que a função funcione precisamos concatenar
+
+// concatenando valores
+console.log(ó '+ name + 'tem' + age + ános.')
+
+// interpolando valores com template literals or template strings
+
+console.log(`o ${name} tem ${age} anos.`)
+
+//
+
+*/
