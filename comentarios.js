@@ -208,6 +208,50 @@ console.log(ó '+ name + 'tem' + age + ános.')
 
 console.log(`o ${name} tem ${age} anos.`)
 
-//
+
+
+*/
+
+
+
+//FUNÇÕES
+
+/*
+ Funcao é um tipo de dado estrutural, ou seja uma estrutura de dado bem organizada para receber todos os codigos.
+ funcao serve para repetir e reagrupar os codigos quantas vez que eu quiser repetir um codigo.
+ dar significado ao codigo.
+
+ // criar um aplicativo de frase motivacionais
+console.log('Estudar é muito bom')
+console.log('Paciencia e persistencia')
+console.log('Revisão é mãe do aprendizado')
+
+
+//declaration -  declacao da funcao
+// funtion statement
+
+function createPhrases()  {
+    console.log('Estudar é muito bom')
+    console.log('Paciencia e persistencia')
+    console.log('Revisão é mãe do aprendizado')
+
+}
+
+// executar a funcao
+createPhrases()
+
+console.log('fim do programa')
+
+// functio expression
+// function anonymous
+
+// parametros (parameters)
+const sum = function (number1, number2) {
+
+    console.log(number1 + number2)
+}
+
+sum(2, 3) // arguments - argumentos
+
 
 */
