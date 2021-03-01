@@ -105,4 +105,6 @@ Var a
 
 console.log(a)
 a = 1
-// R: vai ser impresso no console.log undefined, por causa da elevação.
+// R: vai ser impresso no console.log undefined, por causa do hoisting que foi executado.
+
+

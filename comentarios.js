@@ -255,3 +255,53 @@ sum(2, 3) // arguments - argumentos
 
 
 */
+/* Function () constructor
+   
+
+   * expressão new
+   * criar um novo objeto
+   * this keyword
+*/
+
+function person () {
+      this.name = name
+      this.walk = function (){
+          return this.name + "está andando"
+      }
+}
+
+
+const kalluan = new person ("kalluan")
+const Cartoon = new person ("Cartoon")
+console.log (kalluan.walk())
+console.log (Cartoon.walk())
+
+
+//Prototype javascript é baseado em prototipos, com variados efeitos.
+//__proto__ |. é a função usada para ter acesso aos prototipos.
+
+//  Type conversion (typecasting) vs Type coersion
+/* Alteração de um tipo de dado para outro tipo */
+
+//manipulação de dados do array
+
+
+let tech = ["html", "css","js"]
+
+// adicionar um item no fim
+techs.push("nodejs")
+// adicionar no começo
+techs.unshift("sql")
+// remover do fim
+techs.pop()
+// remover do começo
+techs.shift()
+//pegar somente alguns elementos do array
+console.log(techs.slice(1,1))
+// remover 1 ou mais itens em qualquer posição do array
+techs.splice(1,2)
+// encontrar a posição de um elemento no array
+let index = techs.indexOf('nodejs')
+techs.splice(index,1)
+
+console.log(techs)
