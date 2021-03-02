@@ -305,3 +305,173 @@ let index = techs.indexOf('nodejs')
 techs.splice(index,1)
 
 console.log(techs)
+
+//Expressões e Operadores
+/* expressão são qualquer linhas de codigos que resolve  algo no javascript.
+ */
+// Operação ecomparação
+
+// Irá comparar valores eretonar um Boolean como resposta á comparação
+
+let one = 1
+let two = 2
+
+// ==   igual
+console.log(one == 1) //true
+
+// !=   diferente
+console.log(one != 1) //false
+
+// ===  estritamente igual
+console.log( one ==="1") /*falso pq vai reconhecer a String*/
+console.log( one === 1) //true
+
+// !==  estritamento diferente
+console.log( two === 2) //true
+
+// >    Maior
+console.log(two > 1) //true
+
+// >=   Maior igual
+console.log(two >= 1) //true
+
+// <    Menor
+console.log(one <two ) //true
+
+// <=   Menor igual
+console.log(one <= two) //true
+
+/*
+Falsy
+Quando um valor é considerado false emcontextos onde um boolean é obrigatorio ( condicionais e loops)
+
+false
+0
+-0
+""
+null
+undefined
+NaN
+ */
+
+ /*
+ TRUTHY
+ quando um valor é considerado true em contextos onde um  boolean é obrigatorio ( condicionais e loops)
+
+ true
+ {}
+ []
+ 1
+ 3.23
+ "0"
+ "false"
+ -1
+ Infinity
+ -Infinity
+ */
+
+ /*
+   Operator precedence
+    Precedencia de operadores
+    
+   * grouping                       ( )
+   * negação e incremento            ! ++ -- 
+   * multiplicação e divisão         * /
+   * adição subtração                + -
+   * relacional                     < <= > >=
+   * igualdade                      == != === !==
+   * AND                            &&
+   * OR                             ||
+   * condicional                    ?:
+   * assignment (atribuição)        = += -= *=
+ */
+ // control flow
+ 
+ // if...esle
+ let temperature = 36.5
+
+ if ( temperature >= 37) {
+     console.log ('Febre')
+ }  else  {
+     console.log ('Saudável')
+ } 
+
+ // switch
+ // O switch é semelhante ao if else porem sua estrutura é mais longa.
+
+ let expression = 1
+
+ switch (expression) {
+     case 'a':
+         // codigo
+         console.log('a')
+         break
+     case 'b':
+         // codigo para expression b
+         console.log ('b')
+         break
+    default:
+         console.log ('default')
+         break        
+ }
+
+ // throw 
+ // lançar, disparar
+function sayMyName(name ='') {
+   if (name === '') {
+        throw 'Nome é obrigatório'
+   } 
+
+   console.log('depois do erro')
+
+
+ // try...catch
+ // pegar= catch| try=tentar
+ //com essa funçao consigo encontrar erros e c/apturalos.     
+
+try {
+    sayMyName()
+} catch(e) {
+    console.log(e)
+}
+
+// Estrutra de repetição
+// for 
+for(let i = 0; i++){
+    console.log(i)
+}
+
+//break - para a execução do loop
+
+for(let i = 100; i--){
+    if(i === 50){
+        break;
+    }
+    
+    console.log(i)
+}  
+
+// continue - pula a execução do momento
+
+for(let i = 10; i > 0; i--){
+    if(i === 5){
+        continue;
+    }
+    
+    console.log(i)
+} 
+
+// Estrutura de repetição
+// while
+// while faz muito sentido ser usado, quando não sabemos o momento da parada.
+
+let i = 0;
+while (i < 10) {
+    console.log(i)
+
+    i++;
+}
+
+//for...of
+// O For of é uma declaração que vai crira um loop, atraves de alguma variavel que tivermos.
+
