@@ -70,3 +70,94 @@ Agora, crie uma função que irá calcular o total de receitas e despesas e irá
 
 */
 
+/*
+let family = {
+  incomes: [2500, 3200, 250.43, 360.45],
+  expenses: [320.34, 128.45, 176.87, 1450.00]
+}
+
+function sum(array) {
+  let total = 0;
+
+
+  for(let value of array) {
+    total += value
+  }
+
+  return total
+}
+
+
+function calculateBalance() {
+  const calculateIncomes = sum(family.incomes)
+  const calculateExpenses = sum(family.expenses)
+
+  const total = calculateIncomes - calculateExpenses
+
+  const itsOk = total >= 0
+
+  let balanceText = " Negativo "
+
+  if (itsOk) {
+    balanceText = "Positivo"
+
+  }
+
+  console.log(`Seu saldo é ${balanceText}: R$%${total.toFixed(2)}`)
+
+}
+
+
+calculateBalance()
+*/
+
+/*
+ ### Celsius em fahrenheit
+
+ Crie uma função que receba uma string em celsius ou fahrenheit e faça a transformação de uma unidade para outra
+
+ C = (F - 32) * 5/9
+
+ F = C * 9/5 + 32
+
+*/
+
+
+// transfom('50F')
+function transformDegree(degree) {
+  const celsiusExists = degree.toUpperCase().includes('C')
+  const fahrenheitExists = degree.toUpperCase().includes('F')
+
+// fluxo de erro
+  if(!celsiusExists && !fahrenheitExists ) {
+    throw new Error('Grau não indenficado')
+  }
+
+  // fluxo ideal, F -> C
+  let updatedDegree;
+  let formula = fahrenheit => (fahrenheit - 32) * 5/9
+  let degreeSign = 'C'
+
+
+//fluxo alternativo C ->
+  if(celsiusExists){
+     updatedDegree =Number(degree.toUpperCase().replace("C",""));
+   formula = Celsius => celsius * 9/5 + 32
+   degreeSign = 'F'
+
+  }
+  
+  
+  return formula(updatedDegree) + degreeSign
+
+}
+
+
+
+
+try {
+    transformDegree('50F')
+    transformDegree('50Z')
+} catch (error) {
+  console.log(error.message)
+}
