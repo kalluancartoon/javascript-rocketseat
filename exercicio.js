@@ -121,7 +121,7 @@ calculateBalance()
  F = C * 9/5 + 32
 
 */
-
+/*
 
 // transfom('50F')
 function transformDegree(degree) {
@@ -161,3 +161,92 @@ try {
 } catch (error) {
   console.log(error.message)
 }
+
+ */
+
+/*
+   # Buscando e contando dados kem arrays 
+
+
+   Baseado no Array de Livros por Categoria abaixo, faça os seguintes desafios
+
+   Contar o numero de categorias eo numero de livros em cada categorias
+   contar o numero de autores 
+   Mostrar Livros do autor Augusto Cury
+   Transformar a função acima em uma função que irá receber o nome do autor e decolver os livros desse autor.
+
+*/
+
+const booksByCategory = [
+  { 
+     category:  "Riqueza",
+     books: [
+       { 
+         title: "Os segredos da mente milionaria",
+         author: "T. Harv Eker",
+       },
+       { 
+         title: "O homem mais rico da Babilonia"
+         author: "Robert T. Kiyosaki e Sharon L. Lechter",
+       },
+    ],
+  },
+  { 
+    
+    category: "Inteligência Emocional",
+    books: [
+      {
+        title: "Você é insubstituivel",
+        author: "Augusto Cury",
+      },
+      {
+        title: "Ansiedade - Como enfretar o mal do século",
+        author: "Stephen R. Covey",
+      },
+    ],  
+  },
+];
+
+const totalCategories = booksByCategory.length 
+
+for(let category of booksByCategory) {
+  console.log('Total de livros da categoria: ', category.category)
+  console.log(category.books. length)
+
+}
+
+
+function countAuthors() {
+  let authors = [];
+
+  for(let category of booksByCategory) {
+      for(let book of category.books) {
+          if(authors.indexOf(book.author) == -1) {
+               author.push(book.authors)
+          }
+      }
+  }
+
+   console.log("Total de autores: ", authors.length)
+
+}
+
+countAuthors();
+function booksOfAuthor(author) {
+  let books = [];
+
+  for(let category of booksByCategory) {
+      for(let book of category.books) {
+          if(book.author === author){
+              books.push(book.title)
+          }
+      }
+  }
+
+   console.log(`Livros do autor ${author} : ${books.join(", ")}`)
+
+}
+booksOfAugustoCury('Augusto Cury')
+
+
+
